@@ -1,27 +1,27 @@
-body {
-  background-color: #fefefe;
-  display: -webkit-box;
-  display: -ms-flexbox;
+.section {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .section h1 {
   color: green;
-  font-size: 2rem;
+  font-size: 5rem;
 }
-
-.section p {
+.section span {
   color: purple;
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
-
-.section .btn {
-  border-radius: 0.06rem;
-  border: 1px solid green;
+.section .btn-container {
+  padding: 1rem;
+}
+.section .btn-container .btn {
   color: green;
+  text-transform: uppercase;
+  font-weight: bold;
   background-color: #fefefe;
-}
-/*# sourceMappingURL=styles.css.map */
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: 0.06rem solid green;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

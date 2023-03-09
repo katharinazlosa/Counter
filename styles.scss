@@ -1,21 +1,30 @@
-body {
-    background-color: #fefefe;
-    display: flex;
-    justify-content: center;
-}
+$primaryfont-size: 5rem;
+$primary-color: green;
+
 .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h1 {
-        color: green;
-        font-size: 2rem;
+        color: $primary-color;
+        font-size: $primaryfont-size;
     }
-    p {
+    span {
         color: purple;
-        font-size: 2.5rem;
+        font-size: $primaryfont-size;
     }
-    .btn {
-        border-radius: 0.06rem;
-        border: 1px solid green;
-        color: green;
-        background-color: #fefefe;
+    .btn-container {
+        padding: 1rem;
+        .btn {
+            color: $primary-color;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-color: #fefefe;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            border: 0.06rem solid $primary-color;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            cursor: pointer;
+        }
     }
 }
